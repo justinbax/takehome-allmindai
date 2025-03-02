@@ -64,7 +64,7 @@ export default function Hero() {
       </div>
         <div className={`flex flex-col items-center gap-[2rem] text-center w-full transition-opacity ease-in duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}>
           <h1>The AI Data Analyst</h1>
-          <p className="max-w-[80%]">Ask questions, get instant charts and insights from your data.</p>
+          <p className="max-w-[80%] font-sans">Ask questions, get instant charts and insights from your data.</p>
           <div className="flex flex-row justify-center align-center gap-[20px] my-[2rem]">
             <PrimaryButton link="/" text="Try free" />
             <SecondaryButton link="/" text="Book a demo" />

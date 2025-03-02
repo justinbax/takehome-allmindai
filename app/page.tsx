@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/Hero";
+import Info from "@/components/Info";
 import Navbar from "@/components/Navbar";
 import ScrollingLogos from "@/components/ScrollingLogos";
 
@@ -25,8 +26,6 @@ export default function Home() {
     "assets/logos/supabase-square.png"
   ];
 
-  const logosShuffled = logos.slice(9, 17).concat(logos.slice(0, 9));
-
   return (
     <div>
       <header className="p-[10px] sticky top-0 z-50">
@@ -34,9 +33,10 @@ export default function Home() {
       </header>
       <main>
         <Hero />
-        Hello, world! this is after
-        <ScrollingLogos logos={logos} direction="left" />
-        <ScrollingLogos logos={logosShuffled} direction="right" />
+        <div className="my-20 w-full">
+          <ScrollingLogos logos={logos} direction="left" />
+        </div>
+        <Info />
       </main>
       <footer>
       </footer>

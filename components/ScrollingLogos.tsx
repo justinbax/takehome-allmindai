@@ -9,7 +9,7 @@ export default function ScrollingLogos({
 }) {
     return (
         <div className="flex items-center justify-center">
-            <div className="max-w-1/2">
+            <div className="max-w-4/5">
                 <div className="flex relative flex-nowrap overflow-hidden
                 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-30
                 before:bg-gradient-to-r before:from-[var(--background)] before:to-transparent before:content-['']
@@ -20,7 +20,7 @@ export default function ScrollingLogos({
                     ))}
                     {/* Duplicates for seemless scrolling */}
                     {logos.map((logo, index) => (
-                        <img key={index} src={logo} className={`${direction == "right" ? "marquee-right-item" : "marquee-left-item"} h-32 w-auto flex-none px-5 py-2 opacity-50`} />
+                        <img key={index + logos.length} src={logo} className={`${direction == "right" ? "marquee-right-item" : "marquee-left-item"} h-32 w-auto flex-none px-5 py-2 opacity-50`} />
                     ))}
                 </div>
             </div>
