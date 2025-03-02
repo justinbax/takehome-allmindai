@@ -4,6 +4,7 @@
   --button-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --dashed-background-90: linear-gradient(90deg, #ffffff1a 50%, transparent 50%);
   --dashed-background-180: linear-gradient(180deg, #ffffff1a 50%, transparent 50%);
+  --text-emphasis-gradient: linear-gradient(135deg, #6e7f42, #c37842, #f04e42);
   @keyframes appear {
     0%: {
       opacity: 0;

@@ -1,3 +1,4 @@
+import FaqSection from "./FaqSection";
 import PrimaryButton from "./PrimaryButton";
 import ShortTextBlock from "./ShortTextBlock";
 
@@ -49,6 +50,7 @@ export default function Info() {
                     </div>
                 </div>
             </div>
+            <FaqSection />
         </div>
     );
 }
