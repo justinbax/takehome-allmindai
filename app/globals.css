@@ -156,3 +156,7 @@
 	animation: marquee-right 130s infinite;
 	animation-timing-function: linear;
 }
+
+.navbar-option:hover > .navbar-underline {
+  width: 100%;
+}

@@ -12,7 +12,28 @@ export default function Navbar() {
             ></img>
           </a>
         </div>
-        <div className="flex flex-row justify-end w-full">TODO Dropdown</div>
+        <div className="flex flex-row justify-end w-full">
+          <ul className="flex gap-4">
+            <li>
+              <a href="/" className="relative navbar-option inline-block px-2 transition hover:-translate-y-0.5">
+                <span className="font-sans">Blog</span>
+                <span className="absolute bottom-0 left-0 navbar-underline w-0 transition-all h-0.5 bg-gray-400"></span>
+              </a>
+            </li>
+            <li>
+              <a href="/" className="relative navbar-option inline-block px-2 transition hover:-translate-y-0.5">
+                <span className="font-sans">Pricing</span>
+                <span className="absolute bottom-0 left-0 navbar-underline w-0 transition-all h-0.5 bg-gray-400"></span>
+              </a>
+            </li>
+            <li>
+              <a href="/" className="relative navbar-option inline-block px-2 transition hover:-translate-y-0.5">
+                <span className="font-sans">Log In</span>
+                <span className="absolute bottom-0 left-0 navbar-underline w-0 transition-all h-0.5 bg-gray-400"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
